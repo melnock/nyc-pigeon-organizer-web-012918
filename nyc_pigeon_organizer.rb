@@ -16,8 +16,9 @@ def nyc_pigeon_organizer(data)
     pigeons[x] = {}
     data.each {|sym, hash|
       hash.each{|k, arr|
+        pigeons[x][sym] = []
         if hash[k].include?(x)
-          pigeons[x][sym] = []
+        
           pigeons[x][sym] << k.to_s
         end 
       }
