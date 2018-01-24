@@ -14,6 +14,13 @@ def nyc_pigeon_organizer(data)
   pigeons_name.uniq!
   pigeons_name.each{|x| 
     pigeons[x] = {}
+    data.each {|sym, hash|
+      hash.each{|k, arr|
+        if hash[k].include?(x)
+          pigeons[x][sym] = k
+        end 
+      }
+    }
   }
   pigeons
  
