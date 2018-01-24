@@ -23,5 +23,5 @@ def nyc_pigeon_organizer(data)
     }
   }
   pigeons
- binding.pry
+
 end
