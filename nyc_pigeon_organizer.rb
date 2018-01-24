@@ -1,4 +1,4 @@
-
+require "pry"
 
 def nyc_pigeon_organizer(data)
   # write your code here!
@@ -23,5 +23,5 @@ def nyc_pigeon_organizer(data)
     }
   }
   pigeons
- 
+ binding.pry
 end
